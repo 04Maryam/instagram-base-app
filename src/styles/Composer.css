@@ -1,0 +1,81 @@
+.composer-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.composer-title {
+  text-align: center;
+  font-size: 1.8rem;
+  /* color: #333; */
+  margin-bottom: 1.2rem;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.message-input {
+  flex: 1;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.message-input:focus {
+  border-color: #007bff; 
+}
+
+.send-button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+@media (prefers-color-scheme: dark) {
+  .composer-container {
+    background-color: #2c2c2c;
+    color: white;
+  }
+
+  .composer-title {
+    color: #f1f1f1; /* Light text for dark mode */
+  }
+
+  .message-input {
+    background-color: #444; /* Dark background for input */
+    border: 1px solid #555;
+    color: #fff; /* Light text for input */
+  }
+
+  .message-input:focus {
+    border-color: #007bff;
+  }
+
+  .send-button {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .send-button:hover {
+    background-color: #0056b3;
+  }
+}

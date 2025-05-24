@@ -36,3 +36,24 @@
 .card {
   padding: 2em;
 }
+
+.user-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth-button {
+  display: flex;
+  justify-content: right; 
+  margin-bottom: 10px;
+}
+
+.auth-button button {
+  font-size: small;
+}

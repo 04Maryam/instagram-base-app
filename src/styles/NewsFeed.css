@@ -1,0 +1,208 @@
+.newsfeed-container {
+  width: 300px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsfeed-title {
+  text-align: center;
+  font-size: 1.8rem;
+  /* color: #333; */
+  margin-bottom: 1.2rem;
+}
+
+.message-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.author {
+  display: block;
+  text-align: left;
+  color: gray;
+  font-size: 1rem;
+  /* margin-top: 0.25rem; */
+}
+
+.message-item {
+  padding: 0.8rem;
+  margin-bottom: 0.75rem;
+  background-color: transparent;
+  border: 1px solid #cce5ff; 
+  border-radius: 6px;
+  transition: box-shadow 0.2s ease;
+  color: gray;
+}
+
+.message-item:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.message-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.timestamp {
+  display: block;
+  text-align: right;
+  color: gray;
+  font-size: 0.7rem;
+  margin-top: 0.25rem;
+}
+
+.like-comment {
+  /* display: block;
+  text-align: right; */
+  /* color: gray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0.5rem;
+  
+}
+
+.like-icon {
+  font-size: 1.2rem;
+  margin-top: 0.25rem;
+}
+
+.like-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+
+.like-button-clicked {
+  color: red;
+  border: none;
+}
+
+
+
+.like-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.like-button:active {
+  border: none;
+}
+
+
+.comment-icon {
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.comment-icon:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.comment-button-clicked {
+  color: #007bff;
+  border: none; 
+}
+
+.create-button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 40px;
+}
+
+.create-button:hover {
+  background-color: #0056b3;
+}
+
+.disabled-button {
+  /* cursor: not-allowed; */
+  opacity: 0.6;
+  margin-bottom: 40px;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0 10px;
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-buttons {
+  display: flex;
+  justify-content: right;
+  gap: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.signup-button, .login-button{
+  font-size: x-small;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .newsfeed-container {
+    background-color: #2c2c2c;
+    color: white;
+  }
+
+  .newsfeed-title {
+    color: #f1f1f1; /* Light text for dark mode */
+  }
+
+  .message-item {
+    background-color: transparent;
+    border: 1px solid #3b5d7e; /* Lighter border in dark mode */
+    color: #f1f1f1; /* Light text for messages */
+  }
+
+  .message-item:hover {
+    background-color: rgba(255, 255, 255, 0.07); /* Light hover effect for dark mode */
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+  }
+
+  .send-button {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .send-button:hover {
+    background-color: #0056b3;
+  }
+  
+}
